@@ -1,14 +1,14 @@
-%define		kdeplasmaver	5.4.0
+%define		kdeplasmaver	5.5.4
 %define		qtver		5.3.2
 %define		kpname		kwallet-pam
 Summary:	KWallet PAM integration
 Name:		kp5-%{kpname}
-Version:	5.4.0
-Release:	2
+Version:	5.5.4
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		Base
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	fa968c4eecb73f4bc1cbb032d112eda9
+# Source0-md5:	b744d8f115ef2d2764d83a9fe9071957
 URL:		http://www.kde.org/
 BuildRequires:	cmake >= 2.8.12
 BuildRequires:	kf5-extra-cmake-modules >= 1.4.0
@@ -30,7 +30,7 @@ install -d build
 cd build
 %cmake \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS=ON \
-	-DCMAKE_INSTALL_LIBDIR:PATH=%{_lib} \
+	-DCMAKE_INSTALL_LIBDIR:PATH=/%{_lib} \
 	..
 %{__make}
 
