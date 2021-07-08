@@ -4,7 +4,7 @@
 Summary:	KWallet PAM integration
 Name:		kp5-%{kpname}
 Version:	5.22.3
-Release:	1
+Release:	2
 License:	GPL v2+/LGPL v2.1+
 Group:		Base
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
