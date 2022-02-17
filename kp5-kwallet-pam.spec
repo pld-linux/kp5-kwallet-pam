@@ -1,14 +1,14 @@
-%define		kdeplasmaver	5.24.0
+%define		kdeplasmaver	5.24.1
 %define		qtver		5.9.0
 %define		kpname		kwallet-pam
 Summary:	KWallet PAM integration
 Name:		kp5-%{kpname}
-Version:	5.24.0
+Version:	5.24.1
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		Base
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	4c2f698253f260a955ed1867d1ec9007
+# Source0-md5:	1b57bd0329f779291798d4ee4fb8d6f1
 URL:		http://www.kde.org/
 BuildRequires:	cmake >= 2.8.12
 BuildRequires:	kf5-extra-cmake-modules >= 1.4.0
